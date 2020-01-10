@@ -31,7 +31,13 @@ public class EvaluationService {
 	 */
 	public String acronym(String phrase) {
 		// TODO Write an implementation for this method declaration
-		return null;
+		String myAcronym = " ";
+		for(char c : text.toCharArray())
+		{
+			if(Character.isUpperCase(c))
+				myAcronym = myAcronym + c;
+		}
+		return myAcronym;
 	}
 
 	/**
